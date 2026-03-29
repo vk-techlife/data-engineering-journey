@@ -19,4 +19,4 @@ with open("employees.txt", "r") as file:
         name = parts[0]
         salary = int(parts[1])
         city = parts[2]
-        print(f"{name} | City: {city} | Salary: {salary} | Bonus: {salary*0.1} | Level: {get_level(salary)}")
+        print(f"{name:<10} | City: {city:<10} | Salary: {salary:<8} | Bonus: {salary*0.1:<8.1f} | Level: {get_level(salary):<10}")
